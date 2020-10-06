@@ -1,0 +1,50 @@
+
+/*Styles sheet*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Button style*/
+.accordion_button {
+    display: block;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    background: #7DF2DF;
+    text-align: left;
+    transition: background 0.2s;
+    margin: 0 auto;
+}
+
+/*Change color => pointer*/
+.active, .accordion_button:hover {
+    background-color: #16E0BD; 
+}
+
+
+/*Triangle (right)*/
+.accordion_button::after {
+    content: '\25b4'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
+    float: right;
+    transform: scale(1.5);
+}
+
+.link{
+    text-decoration: none;
+    color: #07BEB8;
+}
+
+.accordion_button-active {
+    background: #C4FFF9;
+}
+
+.accordion_button-active::after {
+    content: '\25be';
+}
+
+.accordion_content {
+    overflow: hidden; /* --> oculta el contenido*/
+    padding: 0 15px;
+    background: #C4FFF9;
+}
