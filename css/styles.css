@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
 }
 
 /*Button style*/
@@ -13,13 +14,12 @@ body {
     cursor: pointer;
     background: #7DF2DF;
     text-align: left;
-    transition: background 0.2s;
     margin: 0 auto;
 }
 
 /*Change color => pointer*/
 .active, .accordion_button:hover {
-    background-color: #16E0BD; 
+    background-color: #16E0BD;
 }
 
 
@@ -44,7 +44,9 @@ body {
 }
 
 .accordion_content {
-    overflow: hidden; /* --> oculta el contenido*/
-    padding: 0 15px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
     background: #C4FFF9;
 }
