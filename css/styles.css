@@ -15,6 +15,7 @@ body {
     background: #7DF2DF;
     text-align: left;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /*Change color => pointer*/
@@ -24,10 +25,15 @@ body {
 
 
 /*Triangle (right)*/
-.accordion_button::after {
+.accordion_button::after{
     content: '\25b4'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
     float: right;
     transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.accordion_button .active {
+    transform: rotate(180deg);
 }
 
 .link{
@@ -37,10 +43,6 @@ body {
 
 .accordion_button-active {
     background: #C4FFF9;
-}
-
-.accordion_button-active::after {
-    content: '\25be';
 }
 
 .accordion_content {
