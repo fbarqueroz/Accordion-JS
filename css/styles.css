@@ -26,7 +26,7 @@ body {
 
 /*Triangle (right)*/
 .accordion_button::after{
-    content: '\25b4'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
+    content: '\25be'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
     float: right;
     transform: scale(1.5);
     margin-right: 10px;

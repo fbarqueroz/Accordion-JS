@@ -3,11 +3,10 @@
 //
 
 let accordion = document.getElementsByClassName("accordion_button");
-let i;
 
-for (i = 0; i < accordion.length; i++) {
+for (let i = 0; i < accordion.length; i++) {
     // Esta funcion se activa al hacer 'click'
-    accordion[i].addEventListener("click", function(event) {
+    accordion[i].addEventListener("click", (event) => {
         let acc = event.currentTarget;
         acc.classList.add("active");
         let panel = acc.nextElementSibling;
